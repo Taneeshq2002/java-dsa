@@ -5,6 +5,15 @@ import java.util.Collections;
 public class Alist {
     public static void main(String[] args) {
         ArrayList<Integer>list=new ArrayList<Integer>();
+        ArrayList<Character>charList=new ArrayList<Character>();
+
+        charList.add('a');
+        charList.add('b');
+
+        char ch=charList.get(0);
+        System.out.println(ch);
+
+        System.out.println(charList);
 
         //add elements
         list.add(1);
@@ -36,5 +45,9 @@ public class Alist {
         //sorting
         Collections.sort(list);
         System.out.println(list);
+
+        for(Integer var:list){
+            System.out.println(var);
+        }
     }
 }
